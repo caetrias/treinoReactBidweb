@@ -23,11 +23,11 @@ Este é um projeto de treino em React, desenvolvido para praticar conceitos como
 
 1. **Clone o repositório:**
    ```bash
-   git clone <url-do-repositorio>
+   git clone <https://github.com/caetrias/treinoReactBidweb>
    ```
 2. **Acesse o diretório do projeto:**
    ```bash
-   cd nome-do-projeto
+   cd treinoReactBidweb
    ```
 3. **Instale as dependências:**
    ```bash
