@@ -1,3 +1,17 @@
 iframe {
-    height: 80vh;
+    width: 100%; /* Garantir que o iframe ocupe toda a largura disponível */
+    height: 80vh; /* Altura proporcional à altura da viewport */
+    border: none; /* Remover bordas padrão */
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: 60vh; /* Reduzir a altura em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        height: 50vh; /* Ajustar ainda mais a altura para telas muito pequenas */
+    }
 }

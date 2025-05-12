@@ -1,11 +1,32 @@
 .rodape {
     display: flex;
     justify-content: center;
+    align-items: center; /* Centralizar verticalmente */
+    padding: 1em; /* Adicionar espaçamento interno */
     background-color: var(--preto);
+    flex-wrap: wrap; /* Permitir quebra de linha em telas menores */
 }
 
 .rodape h2 {
     font-weight: 400;
     font-size: 18px;
     color: var(--branco);
+    text-align: center; /* Centralizar o texto */
+    margin: 0; /* Remover margens padrão */
+}
+
+@media (max-width: 768px) {
+    .rodape {
+        padding: 1em 0.5em; /* Reduzir padding em telas menores */
+    }
+
+    .rodape h2 {
+        font-size: 16px; /* Reduzir tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    .rodape h2 {
+        font-size: 14px; /* Ajustar ainda mais o tamanho da fonte */
+    }
 }

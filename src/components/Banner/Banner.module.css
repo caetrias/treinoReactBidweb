@@ -3,4 +3,17 @@
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; /* Centralizar a imagem no banner */
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 200px; /* Reduzir a altura em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 150px; /* Ajustar ainda mais a altura para telas muito pequenas */
+    }
 }

@@ -1,15 +1,26 @@
 .container {
     padding: 0 0 1em 0;
-    margin-top: .5em;
+    margin: 0.5em auto; /* Centralizar os cards */
     width: 242px;
     background-color: var(--cinza);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adicionar sombra para destaque */
+    overflow: hidden; /* Garantir que o conteúdo não ultrapasse os limites */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
 }
 
 .capa {
     width: 100%;
+    height: auto; /* Ajustar altura proporcional */
+    object-fit: cover; /* Garantir que a imagem preencha o espaço */
 }
 
 .container h2, .favoritar {
@@ -18,10 +29,21 @@
 
 .favoritar {
     width: 25px;
+    cursor: pointer; /* Indicar que é clicável */
 }
 
 .link {
     text-decoration: none;
     color: var(--preto);
-    
+    transition: color 0.3s ease; /* Animação para mudança de cor */
+}
+
+.link:hover {
+    color: var(--azul); /* Alterar cor ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajustar largura para telas menores */
+    }
 }

@@ -1,4 +1,22 @@
 .container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Permitir quebra de linha em telas menores */
+    gap: 1em; /* Adicionar espaçamento entre os itens */
+    padding: 1em; /* Adicionar espaçamento interno */
+}
+
+@media (max-width: 768px) {
+    .container {
+        justify-content: center; /* Centralizar os itens em telas menores */
+        gap: 0.5em; /* Reduzir o espaçamento entre os itens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Empilhar os itens em telas muito pequenas */
+        align-items: center; /* Centralizar os itens */
+        gap: 1em; /* Espaçamento consistente entre os itens */
+    }
 }

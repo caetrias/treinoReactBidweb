@@ -1,4 +1,20 @@
 .container section {
-    margin: 2em 20em;
-    text-align: center
+    margin: 2em auto; /* Centralizar o conteúdo horizontalmente */
+    max-width: 1200px; /* Limitar a largura máxima */
+    padding: 0 1em; /* Adicionar espaçamento interno para telas menores */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container section {
+        margin: 1.5em auto; /* Reduzir margens em telas menores */
+        padding: 0 0.5em; /* Ajustar o espaçamento interno */
+    }
+}
+
+@media (max-width: 480px) {
+    .container section {
+        margin: 1em auto; /* Ajustar margens para telas muito pequenas */
+        padding: 0 0.5em; /* Garantir espaçamento interno */
+    }
 }
