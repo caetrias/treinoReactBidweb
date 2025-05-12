@@ -5,3 +5,17 @@
     padding: 1.1em 20em;
     background-color: var(--preto);
 }
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Empilhar os itens em telas menores */
+        padding: 1em; /* Reduzir o padding */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Links em coluna */
+        align-items: center;
+        gap: 0.5em; /* Espaçamento entre os links */
+    }
+}
